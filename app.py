@@ -7,6 +7,7 @@ app = FastAPI()
 
 # Include the router under the "/api" prefix
 app.include_router(check_alive_router, prefix="/api")
+print(app.routes)
 
 # Run the server for local testing 
 if __name__ == "__main__":
