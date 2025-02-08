@@ -37,8 +37,13 @@ jobs:
                   python -m pip install --upgrade pip
                   pip install -r requirements.txt
 
+            - name: Verify Installed Packages
+              run: |
+                  source venv/bin/activate
+                  pip list
+
             - name: Deploy to Azure App Service
               uses: azure/webapps-deploy@v2
               with:
                   app-name: "cthulhualtarapi"
-                  package: .
+                  package: ./venv
