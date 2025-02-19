@@ -46,10 +46,4 @@ jobs:
               uses: azure/webapps-deploy@v2
               with:
                   app-name: "cthulhualtarapi"
-                  package: "."
-            
-            - name: Run Post-Deployment Commands
-              run: |
-                  echo "Running post-deployment commands"
-                  cd /home/site/wwwroot
-                  pip install -r requirements.txt
+                  package: ./venv
