@@ -5,6 +5,10 @@ API service for the Cthulhu altar
 1. Codespace on VS Code
 1. 8 core 16 GB RAM
 
+# Links
+- Local : [http://127.0.0.1:5001/api/check_alive](http://127.0.0.1:8000/api/check_alive)
+- Azure : [https://cthulhualtarapi-d6ekechrece6beb8.centralus-01.azurewebsites.net:8181/api/check_alive](https://cthulhualtarapi-d6ekechrece6beb8.centralus-01.azurewebsites.net/api/check_alive)
+
 # Azure Setup Notes 
 ## Get values needed for pipeline setup 
 To retrieve the details for AZURE_CLIENT_ID, AZURE_TENANT_ID, AZURE_CLIENT_SECRET, and AZURE_SUBSCRIPTION_ID in the Azure Portal, follow these steps:
